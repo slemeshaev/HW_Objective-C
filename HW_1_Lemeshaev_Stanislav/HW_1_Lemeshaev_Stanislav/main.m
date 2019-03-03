@@ -10,8 +10,18 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        // 1. Создать программу, которая будет пременять к введенным числам различные арифметические операции (на основе практической задачи 3).
+        double firstNumber = 0;
+        double secondNumber = 0;
+        NSLog(@"\nFirst number: ");
+        scanf("%lf", &firstNumber);
+        NSLog(@"\nSecond number: ");
+        scanf("%lf", &secondNumber);
+        NSLog(@"\nSum result = %f", firstNumber + secondNumber);
+        NSLog(@"\nDiff result = %f", firstNumber - secondNumber);
+        NSLog(@"\nMult result = %f", firstNumber * secondNumber);
+        NSLog(@"\nDiv result = %f", firstNumber / secondNumber);
+        
     }
     return 0;
 }
