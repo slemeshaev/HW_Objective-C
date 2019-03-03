@@ -22,6 +22,9 @@ int main(int argc, const char * argv[]) {
         NSLog(@"\nMult result = %f", firstNumber * secondNumber);
         NSLog(@"\nDiv result = %f", firstNumber / secondNumber);
         
+        // 2. Улучшить программу: организовать вывод результата и переменных в консоль одной строкой (как в практической задаче 2).
+        NSLog(@"\nSum result = %f, Diff result = %f, Mult result = %f, Div result = %f", firstNumber + secondNumber, firstNumber - secondNumber, firstNumber * secondNumber, firstNumber / secondNumber);
+        
     }
     return 0;
 }
