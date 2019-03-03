@@ -25,6 +25,11 @@ int main(int argc, const char * argv[]) {
         // 2. Улучшить программу: организовать вывод результата и переменных в консоль одной строкой (как в практической задаче 2).
         NSLog(@"\nSum result = %f, Diff result = %f, Mult result = %f, Div result = %f", firstNumber + secondNumber, firstNumber - secondNumber, firstNumber * secondNumber, firstNumber / secondNumber);
         
+        // 3. *Создать приложение, которое будет вычислять среднее число из трех переменных, не применяя специальные функции
+        double thirdNumber = 0;
+        NSLog(@"\nThird number: ");
+        scanf("%lf", &thirdNumber);
+        NSLog(@"\nAverage number = %f", (firstNumber + secondNumber + thirdNumber) / 3);
     }
     return 0;
 }
