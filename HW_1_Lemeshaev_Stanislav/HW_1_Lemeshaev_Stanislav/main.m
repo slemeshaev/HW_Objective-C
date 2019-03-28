@@ -11,8 +11,8 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // 1. Создать программу, которая будет пременять к введенным числам различные арифметические операции (на основе практической задачи 3).
-        double firstNumber = 0;
-        double secondNumber = 0;
+        double firstNumber;
+        double secondNumber;
         NSLog(@"\nFirst number: ");
         scanf("%lf", &firstNumber);
         NSLog(@"\nSecond number: ");
@@ -26,7 +26,7 @@ int main(int argc, const char * argv[]) {
         NSLog(@"\nSum result = %f, Diff result = %f, Mult result = %f, Div result = %f", firstNumber + secondNumber, firstNumber - secondNumber, firstNumber * secondNumber, firstNumber / secondNumber);
         
         // 3. *Создать приложение, которое будет вычислять среднее число из трех переменных, не применяя специальные функции
-        double thirdNumber = 0;
+        double thirdNumber;
         NSLog(@"\nThird number: ");
         scanf("%lf", &thirdNumber);
         NSLog(@"\nAverage number = %f", (firstNumber + secondNumber + thirdNumber) / 3);
