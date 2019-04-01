@@ -46,6 +46,10 @@ int main() {
         NSLog(@"%d", isLetterEnglishABC(sym));
         
         // Задание 2
+        NSLog(@"\nEnter a operation sign: ");
+        char zn;
+        scanf("%s", &zn);
+        
         NSLog(@"\nEnter a first number: ");
         int firstNumber;
         scanf("%d", &firstNumber);
@@ -53,10 +57,6 @@ int main() {
         NSLog(@"\nEnter a second number: ");
         int secondNumber;
         scanf("%d", &secondNumber);
-        
-        NSLog(@"\nEnter a operation sign: ");
-        char zn;
-        scanf("%s", &zn);
         
         switch (zn) {
             case '+':
