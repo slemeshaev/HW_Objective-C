@@ -14,6 +14,7 @@
 
 #import <Foundation/Foundation.h>
 
+// Ко 2-му заданию
 enum Operation {
     Addition = '+',
     Subtraction = '-',
@@ -59,6 +60,19 @@ void Calculate(Operation sign, double firstNumber, double secondNumber) {
     }
 }
 
+// к 3-му заданию
+typedef enum {
+    Male = 'M',
+    Female = 'F'
+} GenderStatus;
+
+typedef struct Human {
+    NSString *Name;
+    NSInteger Age;
+    GenderStatus gender;
+} Human;
+
+// Основная программа
 int main() {
     @autoreleasepool {
         // 1. Создать массив строк и вывести его в консоль используя цикл.
@@ -82,7 +96,27 @@ int main() {
         scanf("%lf", &secondNumber);
         
         Calculate(zn, firstNumber, secondNumber);
-
+        
+        // 3. Создать структуру Human. Со свойствами “Name” (NSString), “Age”(NSInterger), “Gender”(NS_Enum). Создать несколько экземпляров структуры и вывести их в консоль.
+        Human human_1;
+        human_1.Name = @"Alex";
+        human_1.Age = 26;
+        human_1.gender = Male;
+        
+        Human human_2;
+        human_2.Name = @"Vika";
+        human_2.Age = 25;
+        human_2.gender = Female;
+        
+        Human human_3;
+        human_3.Name = @"Viktor";
+        human_3.Age = 25;
+        human_3.gender = Male;
+        
+        NSLog(@"Human_1 - %@ %li %c", human_1.Name, human_1.Age, human_1.gender);
+        NSLog(@"Human_2 - %@ %li %c", human_2.Name, human_2.Age, human_2.gender);
+        NSLog(@"Human_3 - %@ %li %c", human_3.Name, human_3.Age, human_3.gender);
+        
     }
     return 0;
 }
