@@ -9,5 +9,20 @@
 #import "Engine.h"
 
 @implementation Engine
+- (instancetype) initWithModel:(NSString *)model {
+    self = [super init];
+    if(self) {
+        [model retain];
+        [model release];
+        _model = model;
+        NSLog(@"Model Engine - %@", model);
+    }
+    return self;
+}
 
+- (void) dealloc {
+    NSLog(@"Dealloc Engine - %@", _model);
+    [_model release];
+    [super dealloc];
+}
 @end

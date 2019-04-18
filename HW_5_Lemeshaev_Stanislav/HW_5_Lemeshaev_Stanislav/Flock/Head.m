@@ -9,5 +9,20 @@
 #import "Head.h"
 
 @implementation Head
+- (instancetype) initWithName:(NSString *)name {
+    self = [super init];
+    if(self) {
+        [name retain];
+        [name release];
+        _name = name;
+        NSLog(@"Head - %@", name);
+    }
+    return self;
+}
 
+- (void) dealloc {
+    NSLog(@"Dealloc Head - %@", _name);
+    [_name release];
+    [super dealloc];
+}
 @end

@@ -11,7 +11,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface Wing : NSObject
-
+- (instancetype) initWithNumber:(NSString *) number;
+@property (nonatomic, strong) NSString *number;
 @end
 
 NS_ASSUME_NONNULL_END

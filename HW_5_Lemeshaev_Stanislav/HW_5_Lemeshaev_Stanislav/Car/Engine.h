@@ -11,7 +11,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface Engine : NSObject
-
+- (instancetype) initWithModel: (NSString *) model;
+@property (nonatomic, strong) NSString *model;
 @end
 
 NS_ASSUME_NONNULL_END

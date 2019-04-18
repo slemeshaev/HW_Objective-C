@@ -9,5 +9,20 @@
 #import "Wing.h"
 
 @implementation Wing
+- (instancetype) initWithNumber:(NSString *)number {
+    self = [super init];
+    if(self) {
+        [number retain];
+        [number release];
+        _number = number;
+        NSLog(@"Create Wing - %@", number);
+    }
+    return self;
+}
 
+- (void) dealloc {
+    NSLog(@"Dealloc Wing - %@", _number);
+    [_number release];
+    [super dealloc];
+}
 @end

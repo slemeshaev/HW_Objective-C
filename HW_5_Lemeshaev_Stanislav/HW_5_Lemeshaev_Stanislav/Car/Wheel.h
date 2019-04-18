@@ -11,7 +11,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface Wheel : NSObject
-
+- (instancetype) initWithNumber:(NSNumber *) number;
+@property (nonatomic, strong) NSNumber *number;
 @end
 
 NS_ASSUME_NONNULL_END
