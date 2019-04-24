@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6632FD1A2270443900940F6E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6632FD192270443900940F6E /* main.m */; };
+		6632FD222270452700940F6E /* Arithmetics.m in Sources */ = {isa = PBXBuildFile; fileRef = 6632FD212270452700940F6E /* Arithmetics.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		6632FD162270443900940F6E /* HW_6_Lemeshaev_Stanislav */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HW_6_Lemeshaev_Stanislav; sourceTree = BUILT_PRODUCTS_DIR; };
 		6632FD192270443900940F6E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6632FD202270452700940F6E /* Arithmetics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Arithmetics.h; sourceTree = "<group>"; };
+		6632FD212270452700940F6E /* Arithmetics.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Arithmetics.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				6632FD192270443900940F6E /* main.m */,
+				6632FD202270452700940F6E /* Arithmetics.h */,
+				6632FD212270452700940F6E /* Arithmetics.m */,
 			);
 			path = HW_6_Lemeshaev_Stanislav;
 			sourceTree = "<group>";
@@ -119,6 +124,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6632FD1A2270443900940F6E /* main.m in Sources */,
+				6632FD222270452700940F6E /* Arithmetics.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
